@@ -1,0 +1,20 @@
+[user]
+	name = Nick Quinlan
+	email = nicholas.quinlan@sendgrid.com
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = ~/.dotfiles/gitignore
+[color]
+	ui = 1
+[push]
+	default = matching
+[alias]
+	up-sub = "!f() { cd $1 && git checkout master && git pull && git submodule update --init --recursive; }; f"
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[merge]
+	tool = opendiff
+[github]
+	user = nquinlan
