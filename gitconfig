@@ -8,7 +8,7 @@
 [color]
 	ui = 1
 [push]
-	default = matching
+	default = current
 [alias]
 	up-sub = "!f() { cd $1 && git checkout master && git pull && git submodule update --init --recursive; }; f"
 [filter "media"]
