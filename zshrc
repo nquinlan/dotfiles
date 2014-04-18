@@ -82,7 +82,9 @@ alias beep='echo -en "\07"'
 # alias la='ls -laG'
 alias gca='git commit -a -m'
 alias window='open -a `if [ $TERM_PROGRAM = "Apple_Terminal" ]; then echo "Terminal"; else echo $TERM_PROGRAM; fi` `pwd`'
-alias pushit='git push && open http://open.spotify.com/track/0GugYsbXWlfLOgsmtsdxzg' 
+alias terminal='open -a Terminal `pwd`'
+alias iterm='open -a iTerm.app `pwd`'
+alias pushit='git push && open http://open.spotify.com/track/0GugYsbXWlfLOgsmtsdxzg'
 
 # Version Managers
 
