@@ -73,6 +73,8 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+setopt append_history no_inc_append_history no_share_history
+
 # Load the shell dotfiles, and then some:
 # * ~/.dotfiles/path can be used to extend `$PATH`.
 # * ~/.dotfiles/extra can be used for other settings you don’t want to commit.
