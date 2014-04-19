@@ -73,18 +73,11 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-## Aliases
-
-alias notify='tee >(terminal-notifier) | { while read output; do echo $output; done }'
-alias nb='tee >(terminal-notifier -sound default) | { read output; echo $output; }'
-alias prompt='echo -n "Hit [Enter] to continue> "; read -p "$*"'
-alias beep='echo -en "\07"'
-# alias la='ls -laG'
-alias gca='git commit -a -m'
-alias window='open -a `if [ $TERM_PROGRAM = "Apple_Terminal" ]; then echo "Terminal"; else echo $TERM_PROGRAM; fi` `pwd`'
-alias terminal='open -a Terminal `pwd`'
-alias iterm='open -a iTerm.app `pwd`'
-alias pushit='git push && open http://open.spotify.com/track/0GugYsbXWlfLOgsmtsdxzg'
-
-# Version Managers
+# Load the shell dotfiles, and then some:
+# * ~/.dotfiles/path can be used to extend `$PATH`.
+# * ~/.dotfiles/extra can be used for other settings you don’t want to commit.
+for file in ~/.dotfiles/{path,exports,aliases,extra}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+unset file
 
