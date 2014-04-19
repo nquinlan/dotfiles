@@ -74,6 +74,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 setopt append_history no_inc_append_history no_share_history
+setopt no_hist_verify
 
 # Load the shell dotfiles, and then some:
 # * ~/.dotfiles/path can be used to extend `$PATH`.
