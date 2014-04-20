@@ -4,6 +4,10 @@ defaults write NSGlobalDomain NSUserKeyEquivalents -dict-add "Special Characters
 # Show the ~/Library folder.
 chflags nohidden ~/Library
 
+# Set New Finder Windows to Display ~
+defaults write com.apple.finder NewWindowTargetPath "file://`echo ~`"
+defaults write com.apple.finder NewWindowTarget PfHm
+
 # Allow Airdrop Over All Interfaces
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
