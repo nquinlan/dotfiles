@@ -12,6 +12,12 @@ chflags nohidden ~/Library
 defaults write com.apple.finder NewWindowTargetPath "file://`echo ~`"
 defaults write com.apple.finder NewWindowTarget PfHm
 
+# Allow Zoom with Ctrl-^ and set it to follow the pointer
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad HIDScrollZoomModifierMask -int 262144
+defaults write com.apple.universalaccess closeViewPanningMode 0
+
 # Allow Airdrop Over All Interfaces
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
