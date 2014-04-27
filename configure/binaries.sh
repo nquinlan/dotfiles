@@ -14,3 +14,5 @@ brew install
 
 brew tap phinze/cask
 brew install brew-cask
+
+brew install terminal-notifier
