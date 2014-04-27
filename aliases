@@ -9,7 +9,7 @@ alias gca='git commit -a'
 alias window='open -a `if [ $TERM_PROGRAM = "Apple_Terminal" ]; then echo "Terminal"; else echo $TERM_PROGRAM; fi` `pwd`'
 alias terminal='open -a Terminal `pwd`'
 alias iterm='open -a iTerm.app `pwd`'
-alias pushit='git push && open spotify:track:0GugYsbXWlfLOgsmtsdxzg' 
+alias pushit='open -g spotify:track:0GugYsbXWlfLOgsmtsdxzg; git push' 
 alias afk='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
 
 
