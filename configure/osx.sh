@@ -1,3 +1,7 @@
+# Request & keep-alive `sudo`
+sudo -v
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 # Change Emoji Shortcut to Command-Option-E
 defaults write NSGlobalDomain NSUserKeyEquivalents -dict-add "Special Characters..." "@~e"
 
