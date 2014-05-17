@@ -84,3 +84,7 @@ for file in ~/.dotfiles/{path,exports,aliases,extra,computer}; do
 done
 unset file
 
+# Keybinding
+bindkey "\e\e[D" backward-word
+bindkey "\e\e[C" forward-word
+
