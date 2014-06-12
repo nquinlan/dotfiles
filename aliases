@@ -12,4 +12,7 @@ alias iterm='open -a iTerm.app `pwd`'
 alias pushit='open -g spotify:track:0GugYsbXWlfLOgsmtsdxzg; git push' 
 alias afk='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
 
-
+# Thanks to kylehughes for these
+# https://github.com/kylehughes/system/blob/master/dotfiles/bash_profile 
+alias show-files='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hide-files='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
