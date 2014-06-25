@@ -11,6 +11,8 @@ alias terminal='open -a Terminal `pwd`'
 alias iterm='open -a iTerm.app `pwd`'
 alias pushit='open -g spotify:track:0GugYsbXWlfLOgsmtsdxzg; git push' 
 alias afk='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
+alias todo=todo.sh
+alias t=todo
 
 # Thanks to kylehughes for these
 # https://github.com/kylehughes/system/blob/master/dotfiles/bash_profile 
