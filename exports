@@ -3,3 +3,5 @@
 ## Homebrew Settings
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+## Composer Settings
+export COMPOSER_HOME="$HOME/.composer"

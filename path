@@ -1,0 +1,3 @@
+# Explicit Modifications to $PATH
+
+export PATH=$PATH:$COMPOSER_HOME/vendor/bin
