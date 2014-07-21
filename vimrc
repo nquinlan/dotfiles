@@ -27,6 +27,9 @@ cmap w!! w !sudo tee > /dev/null %
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set the look ahead
+set so=7
+
 " Turn on the WiLd menu
 set wildmenu
 
