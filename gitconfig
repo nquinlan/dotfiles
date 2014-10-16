@@ -12,9 +12,12 @@
 [alias]
 	up-sub = "!f() { cd $1 && git checkout master && git pull && git submodule update --init --recursive; }; f"
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
 [merge]
 	tool = opendiff
 [github]
 	user = nquinlan
+[mergetool]
+	keepBackup = false
