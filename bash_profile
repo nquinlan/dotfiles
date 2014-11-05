@@ -2,8 +2,10 @@
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 # Add Git Completion
-source /usr/local/etc/bash_completion.d/git-completion.bash
-source /usr/local/etc/bash_completion.d/git-prompt.sh
+for file in /usr/local/etc/bash_completion.d/{git-completion.bash,git-prompt.sh}; do
+	which $file && source $file 
+done
+unset file
 
 GIT_PS1_SHOWUNTRACKEDFILE=1
 GIT_PS1_SHOWCOLORHINTS=1
