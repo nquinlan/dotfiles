@@ -3,7 +3,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 # Add Git Completion
 for file in /usr/local/etc/bash_completion.d/{git-completion.bash,git-prompt.sh}; do
-	which $file && source $file 
+	ls $file &> /dev/null && source $file 
 done
 unset file
 
