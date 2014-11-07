@@ -1,3 +1,4 @@
 # Explicit Modifications to $PATH
 
+## composer
 export PATH=$PATH:$COMPOSER_HOME/vendor/bin
