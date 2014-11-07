@@ -2,3 +2,6 @@
 
 ## composer
 export PATH=$PATH:$COMPOSER_HOME/vendor/bin
+
+## rvm
+export PATH="$PATH:$HOME/.rvm/bin"
