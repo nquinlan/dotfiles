@@ -153,4 +153,11 @@ filetype plugin indent on    " required
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ==> Vundle Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" open nerdtree automatically on vim open
 autocmd vimenter * NERDTree
+" move the cursor to the main window
+autocmd VimEnter * wincmd p
+
+" close nerdtree if it's the last and only buffer
+" https://github.com/scrooloose/nerdtree/issues/21
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
