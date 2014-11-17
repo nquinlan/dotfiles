@@ -7,8 +7,8 @@ done
 
 ln -fs ~/.dotfiles/bash_profile ~/.bashrc
 
-for file in ~/{todo,.todo} do
-	mkdir --parents $file
+for file in ~/{todo,.todo}; do
+	mkdir -p $file
 done
 
 ln -fs ~/.dotfiles/todo ~/todo/todo.cfg
