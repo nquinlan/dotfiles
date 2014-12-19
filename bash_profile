@@ -1,5 +1,5 @@
 # User configuration
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Add Git Completion
 for file in /usr/local/etc/bash_completion.d/{git-completion.bash,git-prompt.sh}; do
