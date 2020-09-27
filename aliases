@@ -14,6 +14,7 @@ alias afk='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSave
 alias todo=todo.sh
 alias t=todo
 alias la='ls -laG'
+alias whocomputer='scutil --get ComputerName'
 
 # Thanks to kylehughes for these
 # https://github.com/kylehughes/system/blob/master/dotfiles/bash_profile 
