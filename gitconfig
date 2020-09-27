@@ -1,6 +1,10 @@
 [user]
 	name = Nick Quinlan
-	email = nick@nicholasquinlan.com
+	email = nq@mlh.io
+[includeIf "gitdir:~/dev/"]
+	path = ~/.gitconfig.personal
+[includeIf "gitdir:~/dev/mlh/"]
+	path = ~/.gitconfig.work
 [credential]
 	helper = osxkeychain
 [core]
@@ -21,3 +25,8 @@
 	user = nquinlan
 [mergetool]
 	keepBackup = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
