@@ -16,6 +16,8 @@ alias t=todo
 alias la='ls -laG'
 alias whocomputer='scutil --get ComputerName'
 
+alias github='open -a "/Applications/GitHub Desktop.app"' 
+
 # Thanks to kylehughes for these
 # https://github.com/kylehughes/system/blob/master/dotfiles/bash_profile 
 alias show-files='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'

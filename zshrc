@@ -88,6 +88,7 @@ for file in ~/.dotfiles/{exports,path,aliases,extra,computer}; do
 done
 unset file
 
+autoload -Uz compinit && compinit
 
 setopt prompt_subst
 autoload -U colors && colors
@@ -144,13 +145,41 @@ for file in ~/.dotfiles/{path,exports,aliases,extra,computer}; do
 done
 unset file
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
 
 eval "$(pyenv init -)"
 
 # Add GOPATH
 export PATH="$PATH:/usr/local/go/bin"
 export GOPATH="$HOME/dev/go"
+
+# JINA_CLI_BEGIN
+
+## autocomplete
+if [[ ! -o interactive ]]; then
+    return
+fi
+
+compctl -K _jina jina
+
+_jina() {
+  local words completions
+  read -cA words
+
+  if [ "${#words}" -eq 2 ]; then
+    completions="$(jina commands)"
+  else
+    completions="$(jina completions ${words[2,-2]})"
+  fi
+
+  reply=(${(ps:\n:)completions})
+}
+
+# session-wise fix
+ulimit -n 4096
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+# JINA_CLI_END
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
