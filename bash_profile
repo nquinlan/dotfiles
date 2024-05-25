@@ -60,3 +60,8 @@ ulimit -n 4096
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # JINA_CLI_END
+
+export GAMCFGDIR="/Users/nick/dev/gam/GAMConfig"
+alias gam="/Users/nick/dev/gam/bin/gam/gam"
+
+alias gam="/Users/nick/dev/gam/bin/gamadv-xtd3/gam"

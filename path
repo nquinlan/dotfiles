@@ -1,5 +1,8 @@
 # Explicit Modifications to $PATH
 
+## homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 ## composer
 export PATH=$PATH:$COMPOSER_HOME/vendor/bin
 
@@ -15,3 +18,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 
 ## gopath
 export PATH="/Users/nick/dev/go/bin:$PATH"
+export GOPATH="$HOME/dev/go"
+
+## vscode
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"

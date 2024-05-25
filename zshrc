@@ -145,13 +145,7 @@ for file in ~/.dotfiles/{path,exports,aliases,extra,computer}; do
 done
 unset file
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-
 eval "$(pyenv init -)"
-
-# Add GOPATH
-export PATH="$PATH:/usr/local/go/bin"
-export GOPATH="$HOME/dev/go"
 
 # JINA_CLI_BEGIN
 
@@ -181,5 +175,13 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # JINA_CLI_END
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+
+export GAMCFGDIR="/Users/nick/dev/gam/GAMConfig"
+export OLDGAMPATH="/Users/nick/dev/gam/bin/gam"
+alias gam="/Users/nick/dev/gam/bin/gamadv-xtd3/gam"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source ~/.rvm/scripts/rvm

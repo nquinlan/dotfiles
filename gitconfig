@@ -1,6 +1,6 @@
 [user]
 	name = Nick Quinlan
-	email = nq@mlh.io
+	email = nick@nicholasquinlan.com
 [includeIf "gitdir:~/dev/"]
 	path = ~/.gitconfig.personal
 [includeIf "gitdir:~/dev/mlh/"]

@@ -15,6 +15,7 @@ alias todo=todo.sh
 alias t=todo
 alias la='ls -laG'
 alias whocomputer='scutil --get ComputerName'
+alias whereami='whocomputer'
 
 alias github='open -a "/Applications/GitHub Desktop.app"' 
 
