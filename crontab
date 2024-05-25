@@ -1,0 +1,2 @@
+0 7 * * * find /Users/nick/Downloads/ -type f -mtime +90 -exec mv {} /Users/nick/.Trash \;
+0 8 * * * /opt/homebrew/bin/brew update > /dev/null >&2 /dev/null
